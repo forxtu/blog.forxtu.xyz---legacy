@@ -1,0 +1,3 @@
+export const SET_NAVIGATOR_POSITION = 'navigator/SET_NAVIGATOR_POSITION';
+export const SET_NAVIGATOR_SHAPE = 'navigator/SET_NAVIGATOR_SHAPE';
+export const SET_NAVIGATOR_FILTER = 'navigator/SET_NAVIGATOR_FILTER';
