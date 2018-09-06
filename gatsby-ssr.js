@@ -6,16 +6,18 @@ import React from 'react';
 require('dotenv').config();
 
 import getPageContext from './src/getPageContext';
-import createStore from './src/state/store';
+// import createStore from './src/state/store';
+import configureStore from './src/state';
 import theme from './src/styles/theme';
 
 exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString, setHeadComponents }) => {
   const pageContext = getPageContext();
-  const store = createStore();
+  const reduxStore = configureStore();
+  // const store = createStore();
 
   replaceBodyHTMLString(
     renderToString(
-      <Provider store={store}>
+      <Provider store={reduxStore}>
         <JssProvider
           registry={pageContext.sheetsRegistry}
           generateClassName={pageContext.generateClassName}

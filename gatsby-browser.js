@@ -16,7 +16,7 @@ import configureStore from './src/state';
 
 exports.replaceRouterComponent = ({ history }) => {
   // const reduxStore = createStore();
-  const reduxStore = configureStore(window.REDUX_INITIAL_DATA);
+  const reduxStore = configureStore();
 
   const ConnectedRouterWrapper = ({ children }) => (
     <Provider store={reduxStore}>

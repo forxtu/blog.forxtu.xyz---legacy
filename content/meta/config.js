@@ -4,7 +4,7 @@ module.exports = {
   siteTitle: 'forxtu - a personal programming blog', // <title>
   shortSiteTitle: 'forxtu coding blog', // <title> ending for posts and pages
   siteDescription: 'FORXTU - a personal blog about programming',
-  siteUrl: 'coding.forxtu.xyz',
+  siteUrl: 'blog.forxtu.xyz',
   pathPrefix: '',
   siteImage: 'preview.jpg',
   siteLanguage: 'en',
